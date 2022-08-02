@@ -43,10 +43,18 @@ body {
   font-weight: 400;
 }
 
-.cards {
+.cards-principal {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  min-width: 1140px;
+}
+.cards {
   width: 352px;
   height: 136px;
+  display: flex;
+  justify-content: space-between;
   background-color: red;
   border: 5px;
   margin-top: -65px;
@@ -59,9 +67,5 @@ body {
 
 .cards__title {
   font-size: 16px;
-  color: var(--gr-dark);
-}
-
-.cards__description {
   color: var(--gr-dark);
 }
