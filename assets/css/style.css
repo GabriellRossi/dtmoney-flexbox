@@ -47,8 +47,9 @@ body {
 .cards-principal {
   display: flex;
   justify-content: center;
-  gap: 34px;
-  min-width: 1140px;
+  flex-direction: row;
+  
+  
 }
 .cards {
   width: 352px;
@@ -58,8 +59,8 @@ body {
   background-color: red;
   border: 5px;
   margin-top: -65px;
-  padding: 20px;
 }
+
 
 .cards__title {
   font-size: 16px;
