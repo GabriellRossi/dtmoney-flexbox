@@ -6,15 +6,16 @@
 :root {
   --gr-primary: #5429cc;
   --gr-secondary: #6933ff;
-  --gr-light: #F0F2F5;
-  --gr-light-table: #FFFFFF;
-  --gr-dark: #363f5f;
   --gr-color-botao-topo: #FFFFFF;
-  --gr-background-botao-topo: #33CC95;
+  --gr-background-main: #F0F2F5;
+  --gr-background-cards: #FFFFFF;
+  --gr-background-cards-topo-total: #33CC95;
+  --gr-dark-text-cards: #363f5f;
+  --gr-text-cards-topo-total: #FFFFFF;
 }
 
 body {
-  background: var(--gr-light);
+  background: var(--gr-background-main);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -51,24 +52,34 @@ body {
   
   
 }
-.cards {
+.cards{
   width: 352px;
   height: 136px;
-  display: flex;
-  justify-content: space-between;
-  background-color: red;
+  background-color: var(--gr-background-cards);
   border: 5px;
   margin-top: -65px;
 }
 
+.cards div{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.cards p {
+  color: var(--gr-dark-text-cards);
+  font-size: 36px;
+  padding: 10px;
+  margin: 20px 0;
+}
 
 .cards__title {
-  font-size: 16px;
-  color: var(--gr-dark);
+  font-size: 20px;
+  color: var(--gr-dark-text-cards);
 }
 
 
 .cards:nth-child(3) {
-  background: var(--gr-background-botao-topo);
-  color: var(--gr-color-botao-topo);
+  background: var(--gr-background-cards-topo-total);
 }
