@@ -83,4 +83,5 @@ body {
 
 .cards:nth-child(3) {
   background: var(--gr-background-cards-topo-total);
+  color: var(--gr-text-cards-topo-total);
 }
