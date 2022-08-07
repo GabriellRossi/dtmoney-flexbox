@@ -9,6 +9,7 @@
   --gr-color-botao-topo: #FFFFFF;
   --gr-background-main: #F0F2F5;
   --gr-background-cards: #FFFFFF;
+  --gr-background-products: #FFFFFF;
   --gr-background-cards-topo-total: #33CC95;
   --gr-dark-text-cards: #363f5f;
   --gr-text-cards-topo-total: #FFFFFF;
@@ -45,7 +46,7 @@ body {
   font-weight: 400;
 }
 
-.cards-principal {
+.cards-main {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -84,4 +85,16 @@ body {
 .cards:nth-child(3) {
   background: var(--gr-background-cards-topo-total);
   color: var(--gr-text-cards-topo-total);
+}
+
+.products-main {
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  margin: 60px;
+  font-size: 15px;
+}
+
+.product-title--custom {
+  margin-right: 300px;
 }
