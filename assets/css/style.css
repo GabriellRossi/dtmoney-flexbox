@@ -20,6 +20,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.delimiter {
+  width: 80%;
+  max-width: 1140px;
+  margin-inline: auto;
+}
+
 .top {
   display: flex;
   background-color: var(--gr-primary);
@@ -31,8 +37,6 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 1140px;
-  min-width: 1140px;
 }
 
 .btn__top {
@@ -46,26 +50,20 @@ body {
   font-weight: 400;
 }
 
-.cards-main {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  
-  
+.cards-main .container {
+  margin-top: -65px;
 }
 .cards{
   width: 352px;
   height: 136px;
   background-color: var(--gr-background-cards);
   border-radius: 5px;
-  margin-top: -65px;
   padding: 25px;
 }
 
 .cards div{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .cards p {
@@ -82,23 +80,25 @@ body {
 }
 
 
-.cards:nth-child(3) {
+.cards__total,
+.cards__total h3,
+.cards__total p {
   background: var(--gr-background-cards-topo-total);
   color: var(--gr-text-cards-topo-total);
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-columns: 6fr 3fr 3fr 3fr;
   margin-top: 30px;
-  gap: 10px;
+  row-gap: 10px;
   padding: 30px;
   font-size: 16px;
+  text-align: left;
   
 }
 
 .grid-container > div {
-  text-align: center;
   padding: 10px 20px;
 }
 
